@@ -31,13 +31,14 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(31, 30, 30, 0.658);
+  transition-property: opacity, visibility, transform;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: .5s;
   opacity: 0;
   visibility: hidden;
+
 }
 .popup.open{
-  transition-property: opacity, visibility;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: .8s;
   opacity: 1;
   visibility: visible;
 }
@@ -52,6 +53,15 @@ body {
   max-width: 800px;
   background-color: #fff;
   padding: 20px;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: .5s;
+  opacity: 0;
+  transform: scale(0.1);
+}
+.popup.open .popup__content{
+  opacity: 1;
+  transform: scale(1);
 }
 .popup__close {
 }

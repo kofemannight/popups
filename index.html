@@ -16,7 +16,7 @@
             <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, itaque aut suscipit fugit cupiditate atque tempora impedit quaerat necessitatibus aliquid quod! Pariatur, laudantium. Et perferendis quis odit dolorum nam vitae.</p>
         </div>
         <div class="container">
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, itaque aut suscipit fugit cupiditate atque tempora impedit quaerat necessitatibus aliquid quod! Pariatur, laudantium. Et perferendis quis odit dolorum nam vitae.</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, itaque aut suscipit fugit cupiditate atque tempora impedit quaerat <a href="#" class="popup-link" data-popup="popup2">Lorem</a> aliquid quod! Pariatur, laudantium. Et perferendis quis odit dolorum nam vitae.</p>
         </div>
         <div class="container">
             <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, itaque aut suscipit fugit cupiditate atque tempora impedit quaerat necessitatibus aliquid quod! Pariatur, laudantium. Et perferendis quis odit dolorum nam vitae.</p>
@@ -59,10 +59,22 @@
     <div id="popup1" class="popup">
         <div class="popup__wrapper">
             <div class="popup__content">
-                <a href="#" class="popup__close">Закрыть</a>
+                <a href="#" data-popupClose="popup1" class="popup__close">Закрыть</a>
                 <p class="popup__text">
                     Это первый попап.
                     Благодарим, что выбрали наш скрипт.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <a href="#" data-popupClose="popup2" class="popup__close">Закрыть</a>
+                <p class="popup__text">
+                    Это второй попап.
+                    Экспериментальный.
                 </p>
             </div>
         </div>
