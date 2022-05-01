@@ -33,11 +33,11 @@ body {
   background-color: rgba(31, 30, 30, 0.658);
   opacity: 0;
   visibility: hidden;
+}
+.popup.open{
   transition-property: opacity, visibility;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: .8s;
-}
-.popup.open{
   opacity: 1;
   visibility: visible;
 }
