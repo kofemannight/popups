@@ -2,6 +2,19 @@
 
 console.log('Файл подключен')
 
+import { Popup } from './libs/popup.js'
+console.log(Popup)
+
+const popupOne = new Popup({
+  openSelector: 'poppup-link',
+  closeSelector: 'popup__close',
+});
+
+
+console.log(popupOne)
+
+
+
 // document.addEventListener('click', (event) => {
 //   if(event.target.dataset.popup){
 //     const popupLink = event.target.dataset.popup;
